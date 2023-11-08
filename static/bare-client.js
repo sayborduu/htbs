@@ -124,7 +124,7 @@
 	    }
 	    async request(method, requestHeaders, body, protocol, host, port, path, cache, signal) {
 	        if (protocol.startsWith('blob:')) {
-	            const response = await fetch(`blob:${location.origin}${path}`);
+	            const response = await fetch(`blob:${"https://hypertabs-production-5eb8.up.railway.app"}${path}`);
 	            const result = new Response(response.body, response);
 	            result.rawHeaders = Object.fromEntries(response.headers);
 	            result.rawResponse = response;
@@ -655,7 +655,7 @@
 	    }
 	    async request(method, requestHeaders, body, protocol, host, port, path, cache, signal) {
 	        if (protocol.startsWith('blob:')) {
-	            const response = await fetch(`blob:${location.origin}${path}`);
+	            const response = await fetch(`blob:${"https://hypertabs-production-5eb8.up.railway.app"}${path}`);
 	            const result = new Response(response.body, response);
 	            result.rawHeaders = Object.fromEntries(response.headers);
 	            result.rawResponse = response;
