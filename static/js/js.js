@@ -303,7 +303,7 @@ let newTab = (url, uxor = true) => {
 	} else {
 		frame.setAttribute(
 			'src',
-			'//' + location.host + __uv$config.prefix + xor.encode(url)
+			'//' + "https://hypertabs-production-5eb8.up.railway.app" + __uv$config.prefix + xor.encode(url)
 		);
 	}
 
