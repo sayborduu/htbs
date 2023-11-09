@@ -1,5 +1,5 @@
-importScripts('/uv/uv.bundle.js');
-importScripts('/uv/uv.config.js');
+importScripts('https://hypertabs-production-5eb8.up.railway.app/uv/uv.bundle.js');
+importScripts('https://hypertabs-production-5eb8.up.railway.app/uv/uv.config.js');
 
 class UVServiceWorker extends EventEmitter {     
     constructor(config = __uv$config) {
