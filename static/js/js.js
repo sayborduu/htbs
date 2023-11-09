@@ -28,7 +28,8 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.`)
-const prefix = __uv$config.prefix;
+
+const prefix = 'https://hypertabs-production-5eb8.up.railway.app/uv/service/';
 const bare = new BareClient(__uv$config.bare);
 const URL_BAR = document.getElementById('urlbar');
 const ACTIVE_WINDOW = () => {
