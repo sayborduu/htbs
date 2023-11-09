@@ -19,6 +19,9 @@ if(existsSync("../ssl/key.pem") && existsSync("../ssl/cert.pem")) {
 } else server = createHttpServer();
 
 server.on("request", (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   if(bare.shouldRoute(req)) bare.routeRequest(req, res); else {
     serve(req, res, (err) => {
       res.writeHead(err?.statusCode || 500, null, {
