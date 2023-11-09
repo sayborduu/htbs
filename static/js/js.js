@@ -230,7 +230,7 @@ function openMenu(...x) {
 }
 function inspect() {
 	let firebug = document.createElement('script');
-	firebug.setAttribute('src', '/fbl/firebug-lite-debug.js');
+	firebug.setAttribute('src', 'https://hypertabs-production-5eb8.up.railway.app/fbl/firebug-lite-debug.js');
 	ACTIVE_DOCUMENT().body.appendChild(firebug)(function () {
 		if (ACTIVE_WINDOW().firebug.version) {
 			ACTIVE_WINDOW().firebug.init();
@@ -545,7 +545,7 @@ try {
 ActiveExtensions.active.forEach((ext) => {
 	console.log('==== ACTIVE EXTENSION ====\n' + ext);
 	let extScript = document.createElement('script');
-	extScript.setAttribute('src', './js/x/' + ext + '.js');
+	extScript.setAttribute('src', 'https://hypertabs-production-5eb8.up.railway.app/js/x/' + ext + '.js');
 	document.body.appendChild(extScript);
 });
 if (localStorage.getItem('ctPins')) {
