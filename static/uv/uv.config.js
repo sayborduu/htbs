@@ -1,5 +1,5 @@
 self.__uv$config = {
-	prefix: '/uv/service/',
+	prefix: 'https://hypertabs-production-5eb8.up.railway.app/uv/service/',
 	bare: `${location.protocol}//hypertabs-production-5eb8.up.railway.app/bare/`,
 	encodeUrl: Ultraviolet.codec.xor.encode,
 	decodeUrl: Ultraviolet.codec.xor.decode,
